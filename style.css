@@ -6,6 +6,8 @@ body {
 
 }
 
+/* https://codepen.io/t_afif/pen/JjyBWqG */
+
 *,
 *::before,
 *::after {
@@ -22,7 +24,7 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   list-style: none;
   margin: 0;
-  padding:0.3rem;
+  padding: 0.3rem;
 }
 
 .cards_item {
@@ -73,12 +75,11 @@ body {
   flex-direction: column;
   overflow: hidden;
   padding-right: 30px;
-  background: repeating-linear-gradient(#0000 0 calc(1.2rem - 1px),
-    #66afe1 0 1.2rem) left bottom /100% 100%,
-    linear-gradient(red 0 0) 90% 0/2px 100% #fff;
+  background: repeating-linear-gradient(#0000 0 calc(1.2rem - 1px), #66afe1 0 1.2rem) left bottom /100% 100%,
+    linear-gradient(red 0 0) calc(100% - 30px) 0/2px 100% #fff;
   background-repeat: no-repeat;
   line-height: 1.2rem;
-  -webkit-mask: radial-gradient(circle .8rem at 2px 50%, #0000 98%, #000)0 0/100% 2.4rem;
+  -webkit-mask: radial-gradient(circle .8rem at calc(100% - 2px) 50%, #0000 98%, #000)0 0/100% 2.4rem;
 }
 
 .card_content {
